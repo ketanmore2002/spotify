@@ -74,7 +74,7 @@ def play(requests,video_id):
 
     random_songs = music.objects.all()
 
-    random_songs =  random.sample(list(random_songs), k=10)
+    # random_songs =  random.sample(list(random_songs), k=10)
 
 
     return render(requests, 'player/index.html',{"songs":songs, "random_songs": random_songs})
