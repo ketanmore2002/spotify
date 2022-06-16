@@ -1,2 +1,3 @@
-web: gunicorn gst_project.wsgi --graceful-timeout 120 --preload --keep-alive 20
+release: python manage.py migrate
 
+web: gunicorn myproject.wsgi
